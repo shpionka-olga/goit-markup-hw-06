@@ -23,3 +23,139 @@
     font-style: normal;
 }
 */
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #434455;
+    background-color: #fff;
+}
+h1, h2, h3{
+    color: #2e2f42;
+}
+
+
+a { text-decoration: none;}
+li { list-style-type: none;}
+
+/*-------------Logo---------------*/
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+}
+
+.logo-web {
+    color: #4d5ae5;
+}
+
+/*-----------Navigation----------*/
+.navigation-item {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2e2f42;
+}
+.navigation-item a:hover,
+.navigation-item a:focus
+ {
+    color: #404bbf;
+}
+
+.navigation-item .navigation-studio-item:active {
+    text-decoration: underline;
+}
+
+/*-----------Contacts----------*/
+.contacts{
+    line-height: 1.5;
+    color: #434455;
+}
+.contacts:hover, 
+.contacts:focus{
+    color: #404bbf;
+}
+
+/*-----------Effective Solutions Section----------*/
+.effective-solutions-section h1{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    color: #fff;
+}
+.effective-solutions-section {
+    text-align: center;
+    height: 600px;
+    background-color: #2e2f42;
+}
+
+.order-service-button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+}
+.order-service-button:hover,
+.order-service-button:focus {
+    background: #404bbf;
+}
+
+/*-------- Solutions section---------*/
+.solutions-list h3 { 
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.solutions-list p {
+    line-height: 1.5;
+}
+
+/*----------Our Team section-----------*/
+.our-team-section h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-align: center;
+}
+.our-team-list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.our-team-list p {
+    line-height: 1.5;
+    text-align: center;
+}
+/*------------Portfolio-------------*/
+.our-portfolio h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-align: center;
+}
+.out-portfolio-list-row1 h3, 
+.out-portfolio-list-row2 h3
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.out-portfolio-list-row1 p,
+.out-portfolio-list-row2 p {
+    line-height: 1.5;
+}
+
+/*-----------Footer------------*/
+.footer-text {
+    line-height: 1.5;
+}

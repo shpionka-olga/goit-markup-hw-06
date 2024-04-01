@@ -1,28 +1,3 @@
-/*.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.raleway-<uniquifier> {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-}
-*/
 body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
@@ -42,52 +17,64 @@ li { list-style-type: none;}
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color:  #4d5ae5;
+}
+
+.logo-studio {
     color: #2e2f42;
 }
 
-.logo-web {
-    color: #4d5ae5;
-}
-
 /*-----------Navigation----------*/
+/*todo delete*/
+.navigation-studio-item{
+    color: #2e2f42;
+}
 .navigation-item {
     font-weight: 500;
     line-height: 1.5;
     color: #2e2f42;
 }
-.navigation-item a:hover,
-.navigation-item a:focus
+.navigation-item:hover,
+.navigation-item:focus
  {
     color: #404bbf;
 }
 
+/*todo late Active State again
 .navigation-item .navigation-studio-item:active {
     text-decoration: underline;
-}
+}*/
 
 /*-----------Contacts----------*/
 .contacts{
+    font-style: normal;
+
+}
+.contacts-link {
     line-height: 1.5;
     color: #434455;
 }
-.contacts:hover, 
-.contacts:focus{
+
+.contacts-link:hover, 
+.contacts-link:focus{
     color: #404bbf;
 }
 
 /*-----------Effective Solutions Section----------*/
-.effective-solutions-section h1{
+.effective-solutions-section-title { /*todo h2, h3 have the same values -> may use 1 style for all*/
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
+    letter-spacing: 0.02em; /*todo delete. body has such attr*/
     color: #fff;
 }
+
+
 .effective-solutions-section {
     text-align: center;
-    height: 600px;
     background-color: #2e2f42;
 }
 
@@ -99,7 +86,6 @@ li { list-style-type: none;}
     letter-spacing: 0.04em;
     color: #fff;
 
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
 }
 .order-service-button:hover,
@@ -108,54 +94,60 @@ li { list-style-type: none;}
 }
 
 /*-------- Solutions section---------*/
-.solutions-list h3 { 
+.h3-title-common { /*todo h2, h3 have the same values -> may use 1 style for all*/
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em; /*todo delete. body has such attr*/
 }
 .solutions-list p {
     line-height: 1.5;
+    font-size: 16px;
 }
 
 /*----------Our Team section-----------*/
-.our-team-section h2 {
+.our-team-section{
+    background: #f4f4fd;
+}
+
+.our-team-section-title { 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     text-align: center;
-}
-.our-team-list h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.02em; /*todo delete. body has such attr*/
+    background-color: #fff;
 }
 
 .our-team-list p {
     line-height: 1.5;
     text-align: center;
 }
+
 /*------------Portfolio-------------*/
-.our-portfolio h2{
+.our-portfolio-section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     text-align: center;
-}
-.out-portfolio-list-row1 h3, 
-.out-portfolio-list-row2 h3
-{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    letter-spacing: 0.02em; /*todo delete. body has such attr*/
+    text-transform: capitalize;
 }
 
-.out-portfolio-list-row1 p,
-.out-portfolio-list-row2 p {
+.out-portfolio-list-p {
     line-height: 1.5;
+        font-size: 16px;
 }
 
 /*-----------Footer------------*/
 .footer-text {
     line-height: 1.5;
+    color: #f4f4fd;
+}
+.logo-studio-footer{
+    color: #f4f4fd;
+}
+.footer-tag{
+    background: #2e2f42;
 }

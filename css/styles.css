@@ -82,6 +82,7 @@ li { list-style-type: none;}
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
@@ -94,20 +95,23 @@ li { list-style-type: none;}
 }
 
 /*-------- Solutions section---------*/
-.h3-title-common { /*todo h2, h3 have the same values -> may use 1 style for all*/
+.title-common { /*todo h2, h3 have the same values -> may use 1 style for all*/
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em; /*todo delete. body has such attr*/
 }
-.solutions-list p {
+.text-common {
     line-height: 1.5;
     font-size: 16px;
 }
 
 /*----------Our Team section-----------*/
 .our-team-section{
-    background: #f4f4fd;
+    background-color: #f4f4fd;
+}
+.our-team-list {
+    background-color: #fff;
 }
 
 .our-team-section-title { 
@@ -117,7 +121,6 @@ li { list-style-type: none;}
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 0.02em; /*todo delete. body has such attr*/
-    background-color: #fff;
 }
 
 .our-team-list p {

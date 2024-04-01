@@ -107,11 +107,13 @@ li { list-style-type: none;}
 }
 
 /*----------Our Team section-----------*/
+
 .our-team-section{
     background-color: #f4f4fd;
 }
-.our-team-list {
-    background-color: #fff;
+
+.our-team-list-item {
+    background-color: #FFFFFF;
 }
 
 .our-team-section-title { 

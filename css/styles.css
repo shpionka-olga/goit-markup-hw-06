@@ -4,14 +4,43 @@ body {
     color: #434455;
     background-color: #fff;
 }
-h1, h2, h3{
-    color: #2e2f42;
+
+a {
+    text-decoration: none;
 }
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+} 
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+img{
+    display: block;
+}
+/* -----------Container-----------*/
+.container {
+    max-width: 1128px;
+    padding: 0; 
+    margin: 0 auto;
 
+}
+/* -----------Header-------------- */
+.header {
+    padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc;
 
-a { text-decoration: none;}
-li { list-style-type: none;}
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.section{
+    padding: 120px 0;
+}
 /*-------------Logo---------------*/
 .logo {
     font-family: "Raleway", sans-serif;
@@ -20,26 +49,44 @@ li { list-style-type: none;}
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:  #4d5ae5;
-}
+    color: #4d5ae5;
 
+    display: inline-block;
+}
+.logo.logo-header{
+    margin-right: 76px;
+}
 .logo-studio {
     color: #2e2f42;
 }
 
-/*-----------Navigation----------*/
-/*todo delete*/
-.navigation-studio-item{
-    color: #2e2f42;
+/*--------------------Navigation-----------------*/
+.navigation-panel{
+
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
 }
+
+.navigation-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+
 .navigation-item {
     font-weight: 500;
     line-height: 1.5;
     color: #2e2f42;
 }
+
 .navigation-item:hover,
-.navigation-item:focus
- {
+.navigation-item:focus {
     color: #404bbf;
 }
 
@@ -48,32 +95,46 @@ li { list-style-type: none;}
     text-decoration: underline;
 }*/
 
-/*-----------Contacts----------*/
-.contacts{
+/*----------------------Contacts-----------------*/
+.contacts-list {
     font-style: normal;
 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 40px;
+
 }
+
 .contacts-link {
     line-height: 1.5;
     color: #434455;
 }
 
-.contacts-link:hover, 
-.contacts-link:focus{
+.contacts-link:hover,
+.contacts-link:focus {
     color: #404bbf;
 }
 
 /*-----------Effective Solutions Section----------*/
-.effective-solutions-section-title { /*todo h2, h3 have the same values -> may use 1 style for all*/
+.effective-solutions-section-title {
+    /*todo h2, h3 have the same values -> may use 1 style for all*/
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em; /*todo delete. body has such attr*/
+    letter-spacing: 0.02em;
+    /*todo delete. body has such attr*/
     color: #fff;
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-.effective-solutions-section {
+.section.effective-solutions-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     background-color: #2e2f42;
 }
@@ -86,21 +147,46 @@ li { list-style-type: none;}
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-
     background: #4d5ae5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
 .order-service-button:hover,
 .order-service-button:focus {
     background: #404bbf;
 }
 
 /*-------- Solutions section---------*/
-.title-common { /*todo h2, h3 have the same values -> may use 1 style for all*/
+.solutions-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.solutions-list-item{
+    width: calc((100% - 3*24px) / 4);
+}
+
+
+.solutions-section-title{
+    visibility: hidden;
+}
+/* ----------------Common title and text--------------- */
+.title-common {
+    /*todo h2, h3 have the same values -> may use 1 style for all*/
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em; /*todo delete. body has such attr*/
+    letter-spacing: 0.02em;
+    /*todo delete. body has such attr*/
+    color: #2e2f42;
+    margin-bottom: 8px;
 }
+
 .text-common {
     line-height: 1.5;
     font-size: 16px;
@@ -108,26 +194,37 @@ li { list-style-type: none;}
 
 /*----------Our Team section-----------*/
 
-.our-team-section{
+.our-team-section {
     background-color: #f4f4fd;
+}
+.our-team-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
+.our-team-info{
+    padding: 32px 16px;
 }
 
 .our-team-list-item {
+    flex-basis: calc((100% - 3*24px) / 4);
+    text-align: center;
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
 }
 
-.our-team-section-title { 
+.our-team-section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 0.02em; /*todo delete. body has such attr*/
-}
-
-.our-team-list p {
-    line-height: 1.5;
-    text-align: center;
+    letter-spacing: 0.02em;
+    /*todo delete. body has such attr*/
+    color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 /*------------Portfolio-------------*/
@@ -136,23 +233,51 @@ li { list-style-type: none;}
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02em; /*todo delete. body has such attr*/
+    letter-spacing: 0.02em;
+    /*todo delete. body has such attr*/
     text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
 }
-
-.out-portfolio-list-p {
-    line-height: 1.5;
-        font-size: 16px;
+.out-portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    row-gap: 48px;
+    column-gap: 24px;
 }
-
+.out-portfolio-list-item{
+    flex-basis: calc((100% - 2*24px) / 3);
+}
+.out-portfolio-info{
+    text-align: start;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+}
 /*-----------Footer------------*/
+.footer-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: start;
+}
+.logo.logo-footer {
+    margin-bottom: 16px;
+}
 .footer-text {
     line-height: 1.5;
     color: #f4f4fd;
+    width: 254px;
 }
-.logo-studio-footer{
+
+.logo-studio-footer {
     color: #f4f4fd;
 }
-.footer-tag{
+
+.footer-tag {
     background: #2e2f42;
 }

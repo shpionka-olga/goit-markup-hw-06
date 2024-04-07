@@ -23,16 +23,16 @@ img{
 }
 /* -----------Container-----------*/
 .container {
-    max-width: 1128px;
-    padding: 0; 
+    width: 1158px;
+    padding: 0 15px; 
     margin: 0 auto;
-
+    box-sizing: border-box;
 }
 /* -----------Header-------------- */
-.header {
-    padding: 24px 0;
+.header{
     border-bottom: 1px solid #e7e9fc;
-
+}
+.container-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,10 +63,10 @@ img{
 /*--------------------Navigation-----------------*/
 .navigation-panel{
 
-display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .navigation-list {
@@ -75,7 +75,7 @@ flex-direction: row;
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
-
+    padding: 24px 0;
 }
 
 
@@ -151,6 +151,11 @@ flex-direction: row;
     border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0  auto;
 }
 
 .order-service-button:hover,
@@ -172,9 +177,6 @@ flex-direction: row;
 }
 
 
-.solutions-section-title{
-    visibility: hidden;
-}
 /* ----------------Common title and text--------------- */
 .title-common {
     /*todo h2, h3 have the same values -> may use 1 style for all*/
@@ -205,7 +207,7 @@ flex-direction: row;
     gap: 24px;
 }
 .our-team-info{
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .our-team-list-item {
@@ -244,7 +246,7 @@ flex-direction: row;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     row-gap: 48px;
     column-gap: 24px;
@@ -260,11 +262,6 @@ flex-direction: row;
     padding: 32px 16px;
 }
 /*-----------Footer------------*/
-.footer-content{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: start;
-}
 .logo.logo-footer {
     margin-bottom: 16px;
 }
@@ -280,4 +277,7 @@ flex-direction: row;
 
 .footer-tag {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: start;
 }

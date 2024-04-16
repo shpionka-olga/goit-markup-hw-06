@@ -35,6 +35,7 @@ img{
 
 .header{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -102,12 +103,13 @@ img{
     color: #404bbf;
 } 
 
-.navigation-item{
+.navigation-item:first-child .navigation-item-link{
+    color: #404bbf;
     position: relative;
 }
 
-.navigation-item:first-child .navigation-item-link:active::after{
-    content: "";
+.navigation-item:first-child .navigation-item-link::after{
+    content: '';
     display: block;
     width: 100%;
     height: 4px;
@@ -116,7 +118,6 @@ img{
     position: absolute;
     bottom: -1px;
     left: 0;
-       
 
 }
 
@@ -136,6 +137,7 @@ img{
 .contacts-link {
     line-height: 1.5;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -162,14 +164,17 @@ img{
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #2e2f42;
     background-image: linear-gradient(to bottom,
      rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)), 
       url("../images/people-office.jpg");
-    background-size: 1440px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
  
 }
 
@@ -226,6 +231,10 @@ img{
     overflow: hidden;
 }
 .container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     padding-top: 24px;
@@ -272,7 +281,7 @@ img{
 }
 
 .our-team-info{
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .our-team-list-item {
@@ -302,9 +311,7 @@ img{
     flex-direction: row;
     gap: 24px;
 }
-.social-links-item{
-    flex-basis: calc((100% - 3*24px) / 4);
-}
+
 .social-links-item-link{
     display: flex;
     justify-content: center;
@@ -317,13 +324,13 @@ img{
 }
 .social-icon{
     fill: #f4f4fd;
-        width: 16px;
-        height: 16px;
 }
 
-.our-team-list-item:hover .social-links-item-link{ 
+.our-team-list-item:hover .social-links-item-link,
+.our-team-list-item:focus .social-links-item-link { 
     background-color: #404bbf;
 }
+
 /* --------------Portfolio--------------- */
 
 .our-portfolio-section-title {
@@ -352,6 +359,9 @@ img{
 .out-portfolio-list-item{
     flex-basis: calc((100% - 2*24px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.overlay{
     position: relative;
     overflow: hidden;
 }
@@ -372,7 +382,7 @@ img{
     padding: 32px 16px;
 }
 
-.overlay {
+.overlay-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -380,22 +390,25 @@ img{
     height: 100%;
     padding: 40px 32px;
     background-color: #4d5ae5;
- 
+    text-align: start;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #f4f4fd;
+    letter-spacing: 0.02em;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-text{
-    text-align: start;
-    line-height: 1.5;
-    color: #f4f4fd;
-}
 
-.out-portfolio-list-item:hover .overlay{
-    height: 300px;
+.out-portfolio-list-item:hover .overlay-text,
+.out-portfolio-list-item:focus .overlay-text{
     transform: translateY(0);
 }
 
 /*----------------Footer----------------*/
+
+.logo-container{
+    margin-right: 120px;
+}
 
 .logo.logo-footer {
     margin-bottom: 16px;
@@ -426,11 +439,12 @@ img{
 }
 .footer-social-links-list{
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 16px;
     max-width: 208px;
+    gap: 16px;
+    
 }
 .footer-social-links-item{
   flex-basis: calc((100% - 3*16px) / 4); 
@@ -441,19 +455,17 @@ img{
    justify-content: flex-start; 
    flex-direction: row;
    align-items: flex-start;
-   gap: 120px;
 }
 
 .social-icon-footer{
     fill: #f4f4fd;
-    width: 24px;
-    height: 24px;
 }
 
 .social-links-item{
     fill: #31d0aa;
 }
 
-.social-media-container .social-links-item-link:hover {
+.social-media-container .social-links-item-link:hover,
+.social-media-container .social-links-item-link:focus{
     background-color: #31d0aa;
 }

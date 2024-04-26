@@ -128,14 +128,12 @@ button {
     position: absolute;
     bottom: -1px;
     left: 0;
-
 }
 
 /*----------------------Contacts-----------------*/
 
 .contacts-list {
     font-style: normal;
-
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
@@ -692,7 +690,6 @@ button {
 .modal-comment-area:focus {
     outline: none;
 }
-       
 
 .modal-comment-area::placeholder{
     font-weight: 400;

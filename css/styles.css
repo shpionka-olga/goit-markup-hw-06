@@ -598,7 +598,7 @@ button {
 /* ----------Close button-------- */
 .icon-close{ 
     fill: #2e2f42;
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-close-button{
@@ -671,12 +671,11 @@ button {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     padding-left: 38px;
+    outline: transparent;
 }
 
 .modal-field:focus {
-    outline: transparent;
     border: 1px solid #4d5ae5;
-
 }
 .container-input-field {
     margin-bottom: 8px;

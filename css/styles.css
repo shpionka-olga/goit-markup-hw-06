@@ -744,14 +744,9 @@ button {
 } 
 
 .icon-checkbox-checked{
-    fill: transparent;
     cursor: pointer;
 }
 
-.checkbox-standart:checked+.agreement-lable .icon-checkbox-checked {
-    display: inline-block;
-    fill: #f4f4fd;
-}
 .checkbox-standart:checked+.agreement-lable .checkbox-custom {
     background-color: #404bbf;
     border: none;

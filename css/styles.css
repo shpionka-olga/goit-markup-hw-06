@@ -101,137 +101,10 @@ button {
     color: #2e2f42;
 }
 
-/* -------Solid Menu Burger-------- */
 
-.solid-menu-button {
-    border: none;
-    border-width: 0;
-    cursor: pointer;
-    background-color: transparent;
-    padding: 0;
-    margin-left: auto;
-    outline: none;
-    line-height: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
 
-.icon-solid-menu {
-    display: inline;
-}
 
-.navigation-list {
-    display: none;
-}
-
-.contacts-list {
-    display: none;
-}
-
-.burger-menu {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    min-width: 320px;
-    height: 100%;
-    z-index: 999;
-
-    opacity: 0;
-    pointer-events: none;
-    overflow: auto;
-
-    padding: 72px 24px 40px 16px;
-    display: flex;
-    flex-direction: column;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.burger-menu.is-open {
-    opacity: 1;
-    pointer-events: auto;
-
-}
-
-.menu-close-button {
-    background-color: #e7e9fc;
-}
-
-.burger-menu .navigation-panel {
-    display: block;
-}
-
-.burger-menu .navigation-list {
-    display: block;
-}
-
-.burger-menu .navigation-item-link {
-    font-weight: 700;
-    line-height: 1.11;
-    font-size: 36px;
-    padding: 0;
-    color: #2e2f42;
-    display: inline-block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-item-link:hover,
-.navigation-item-link:focus {
-    color: #404bbf;
-}
-
-.navigation-item:first-child .navigation-item-link {
-    color: #404bbf;
-    position: relative;
-}
-
-.burger-menu .navigation-item {
-    margin-bottom: 40px;
-}
-
-.burger-menu .navigation-item:last-child {
-    margin-bottom: 0;
-}
-
-.burger-menu .navigation-item:first-child .navigation-item-link::after {
-    content: none;
-}
-
-.burger-menu .navigation-item:first-child {
-    color: #404bbf;
-}
-
-.burger-address {
-    margin-bottom: 48px;
-    margin-top: auto;
-
-}
-
-.burger-menu .contacts-list {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    gap: 24px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.burger-menu .contacts-link {
-    line-height: 1.2;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.burger-menu .contacts-link:hover,
-.burger-menu .contacts-link:focus {
-    color: #404bbf;
-}
-
-.burger-menu .contacts-item:first-child .contacts-link {
-    color: #4d5ae5;
-}
-
-/*------Social Links Burger menu--------- */
+/*------Social Links --------- */
 
 .social-links-list {
     display: flex;
@@ -241,9 +114,7 @@ button {
     gap: 24px;
 }
 
-.burger-menu .social-links-list {
-    gap: 40px;
-}
+
 
 .social-links-item-link {
     display: flex;
@@ -877,6 +748,146 @@ button {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (max-width: 767px) {
+
+    /* -------Solid Menu Burger-------- */
+
+    .solid-menu-button {
+        border: none;
+        border-width: 0;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0;
+        margin-left: auto;
+        outline: none;
+        line-height: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .icon-solid-menu {
+        display: inline;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    .contacts-list {
+        display: none;
+    }
+
+    .burger-menu {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        min-width: 320px;
+        height: 100%;
+        z-index: 999;
+
+        opacity: 0;
+        pointer-events: none;
+        overflow: auto;
+
+        padding: 72px 24px 40px 16px;
+        display: flex;
+        flex-direction: column;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .burger-menu.is-open {
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+
+    .menu-close-button {
+        background-color: #e7e9fc;
+    }
+
+    .burger-menu .navigation-panel {
+        display: block;
+    }
+
+    .burger-menu .navigation-list {
+        display: block;
+    }
+
+    .burger-menu .navigation-item-link {
+        font-weight: 700;
+        line-height: 1.11;
+        font-size: 36px;
+        padding: 0;
+        color: #2e2f42;
+        display: inline-block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .navigation-item-link:hover,
+    .navigation-item-link:focus {
+        color: #404bbf;
+    }
+
+    .navigation-item:first-child .navigation-item-link {
+        color: #404bbf;
+        position: relative;
+    }
+
+    .burger-menu .navigation-item {
+        margin-bottom: 40px;
+    }
+
+    .burger-menu .navigation-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .burger-menu .navigation-item:first-child .navigation-item-link::after {
+        content: none;
+    }
+
+    .burger-menu .navigation-item:first-child {
+        color: #404bbf;
+    }
+
+    .burger-address {
+        margin-bottom: 48px;
+        margin-top: auto;
+
+    }
+
+    .burger-menu .contacts-list {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        gap: 24px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-menu .contacts-link {
+        line-height: 1.2;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .burger-menu .contacts-link:hover,
+    .burger-menu .contacts-link:focus {
+        color: #404bbf;
+    }
+
+    .burger-menu .contacts-item:first-child .contacts-link {
+        color: #4d5ae5;
+    }
+
+    /*------Social Links Burger menu--------- */
+    .burger-menu .social-links-list {
+        gap: 40px;
+    }
+
+
+}
         
 
 
@@ -918,6 +929,10 @@ button {
 
     /*--------------------Navigation-----------------*/
 
+    .burger-menu{
+        display: none;
+    }
+
     .navigation-panel {
         display: flex;
         align-items: center;
@@ -942,6 +957,17 @@ button {
         /* add display: inline-block for padding work */
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    
+    .navigation-item-link:hover,
+    .navigation-item-link:focus {
+        color: #404bbf;
+    }
+    
+    .navigation-item:first-child .navigation-item-link {
+        color: #404bbf;
+        position: relative;
+    }
+
 
     .navigation-item:first-child .navigation-item-link::after {
         content: '';

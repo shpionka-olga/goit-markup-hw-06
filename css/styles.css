@@ -731,6 +731,10 @@ button {
     fill: #f4f4fd;
 }
 
+.checkbox-standart:focus+.agreement-lable .checkbox-custom {
+    border-color: #4d5ae5;
+}
+
 .modal-button {
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);

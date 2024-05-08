@@ -560,7 +560,8 @@
                 <div class="container-input-field">
                     <label class="modal-lable" for="user-name">Name</label>
                     <div class="container-modal-icon-field">
-                        <input class="modal-field" type="text" name="user-name" id="user-name" autofocus>
+                        <input class="modal-field" type="text" name="user-name" id="user-name"
+                            pattern="[А-ЯҐЄІЇа-яґєії\s'-]{2,}" autofocus required>
                         <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
@@ -569,7 +570,8 @@
                 <div class="container-input-field">
                     <label class="modal-lable" for="modal-phone">Phone</label>
                     <div class="container-modal-icon-field">
-                        <input class="modal-field" type="tel" name="phone" id="modal-phone">
+                        <input class="modal-field" type="tel" name="phone" id="modal-phone"
+                            pattern="^\+3\d-\d{3}-\d{3}-\d{2}-\d{2}$" required>
                         <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
@@ -578,7 +580,8 @@
                 <div class="container-input-field">
                     <label class="modal-lable" for="modal-email">Email</label>
                     <div class="container-modal-icon-field">
-                        <input class="modal-field" type="email" name="email" id="modal-email">
+                        <input class="modal-field" type="email" name="email" id="modal-email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                         <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -592,7 +595,7 @@
                 </div>
                 <div class="modal-agreement-container">
                     <input class="checkbox-standart visually-hidden" name="user-privacy" type="checkbox"
-                        id="user-privacy" value="true">
+                        id="user-privacy" value="true" required>
 
                     <label class="modal-lable agreement-lable" for="user-privacy">
                         <span class="checkbox-custom">

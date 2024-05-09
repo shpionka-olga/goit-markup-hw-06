@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, h6, p{
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* input {
     font-family: inherit; Already exist on normalize
@@ -36,23 +38,12 @@ button {
 
 
 
+
 /* ================================================ */
 /* ==================Mobile First================= */
 /* ================================================ */
 
 /* max-width: 767px */
-
-/* --------------Images------------ */
-.image-desktop {
-    display: none;
-}
-
-.image-table {
-    display: none;
-}
-
-.image-mobile {
-    display: inline-block;}
 
 /* -----------Container-----------*/
 .container {
@@ -906,20 +897,6 @@ button {
 
 @media screen and (min-width: 768px) {
 
-    /* --------Images------------ */
-
-    .image-desktop {
-        display: none;
-    }
-
-    .image-table {
-        display: inline-block;
-    }
-
-    .image-mobile {
-        display: none;
-    }
-
     /* -----------Container-----------*/
 
     .container {
@@ -1153,19 +1130,6 @@ button {
 
 @media screen and (min-width: 1158px) {
 
-    /* --------Images------------ */
-
-    .image-desktop {
-        display: inline-block;
-    }
-
-    .image-table {
-        display: none;
-    }
-    
-    .image-mobile {
-        display: none;
-    }
 
     /* -----------Container-----------*/
 

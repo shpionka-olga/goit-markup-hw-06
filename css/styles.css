@@ -40,7 +40,8 @@ button {
 /* ==================Mobile First================= */
 /* ================================================ */
 
- /* @media screen and (max-width: 767px) {  */
+/* max-width: 767px */
+
 /* --------------Images------------ */
 .image-desktop {
     display: none;
@@ -100,9 +101,6 @@ button {
 .logo-studio {
     color: #2e2f42;
 }
-
-
-
 
 /*------Social Links --------- */
 
@@ -282,11 +280,11 @@ button {
     margin-bottom: 72px;
 }
 
- .our-team-section {
+.our-team-section {
     background-color: #f4f4fd;
 }
 
- .our-team-list {
+.our-team-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -755,6 +753,10 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ================================================ */
+/* ==================    Mobile   ================= */
+/* ================================================ */
+
 @media screen and (max-width: 767px) {
 
     /* -------Solid Menu Burger-------- */
@@ -788,7 +790,8 @@ button {
         background-color: #fff;
         position: fixed;
         top: 0;
-        min-width: 320px;
+        left: 0;
+        width: 100%;
         height: 100%;
         z-index: 999;
 

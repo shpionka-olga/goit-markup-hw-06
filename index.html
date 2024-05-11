@@ -42,57 +42,59 @@
             </button>
             <!------------------Mobile Burger Menu------------>
             <div class="burger-menu">
-                <button class="form-close-button menu-close-button" type="button"><svg class="icon-close" width="8"
-                        height="8">
-                        <use href="./images/icons.svg#icon-close-black"></use>
-                    </svg>
-                </button>
-                <nav class="navigation-panel">
-                    <ul class="navigation-list">
-                        <li class="navigation-item"><a class="navigation-item-link" href="./index.html">Studio</a>
+                <div class="container burger-container">
+                    <button class="form-close-button menu-close-button" type="button"><svg class="icon-close" width="8"
+                            height="8">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <nav class="navigation-panel">
+                        <ul class="navigation-list">
+                            <li class="navigation-item"><a class="navigation-item-link" href="./index.html">Studio</a>
+                            </li>
+                            <li class="navigation-item"><a class="navigation-item-link" href="">Portfolio</a></li>
+                            <li class="navigation-item"><a class="navigation-item-link" href="">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <address class="burger-address">
+                        <ul class="contacts-list">
+                            <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000)
+                                    111-11-11</a></li>
+                            <li class="contacts-item"><a class="contacts-link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        </ul>
+                    </address>
+                    <ul class="social-links-list">
+                        <li class="social-links-item ">
+                            <a href="https://www.instagram.com/" target="_blank" class="social-links-item-link">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="navigation-item"><a class="navigation-item-link" href="">Portfolio</a></li>
-                        <li class="navigation-item"><a class="navigation-item-link" href="">Contacts</a></li>
+                        <li class="social-links-item">
+                            <a href="https://twitter.com/" target="_blank" class="social-links-item-link">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.facebook.com/" target="_blank" class="social-links-item-link">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-links-item">
+                            <a href="https://www.linkedin.com/" target="_blank" class="social-links-item-link">
+                                <svg class="social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-                <address class="burger-address">
-                    <ul class="contacts-list">
-                        <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000)
-                                111-11-11</a></li>
-                        <li class="contacts-item"><a class="contacts-link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    </ul>
-                </address>
-                <ul class="social-links-list">
-                    <li class="social-links-item ">
-                        <a href="https://www.instagram.com/" target="_blank" class="social-links-item-link">
-                            <svg class="social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links-item">
-                        <a href="https://twitter.com/" target="_blank" class="social-links-item-link">
-                            <svg class="social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links-item">
-                        <a href="https://www.facebook.com/" target="_blank" class="social-links-item-link">
-                            <svg class="social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-links-item">
-                        <a href="https://www.linkedin.com/" target="_blank" class="social-links-item-link">
-                            <svg class="social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -326,6 +328,7 @@
                 <ul class="out-portfolio-list">
                     <li class="out-portfolio-list-item">
                         <div class="overlay">
+                            <!-- order is impotent. From desktop to small mobile -->
                             <picture class="image-container">
                                 <source srcset="./images/bank-desktop.jpg 1x, ./images/bank-desktop@2x.jpg 2x"
                                     width="360" height="300" media="(min-width: 1158px)" />

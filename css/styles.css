@@ -85,10 +85,6 @@ button {
     display: inline-block;
 }
 
-.logo.logo-header {
-    margin-right: 76px;
-}
-
 .logo-studio {
     color: #2e2f42;
 }
@@ -314,21 +310,16 @@ button {
     align-items: center;
     justify-content: center;
     align-content: center;
+    gap: 48px
 }
 .out-portfolio-list-item {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .overlay {
     position: relative;
     overflow: hidden;
 }
-.out-portfolio-list-item:hover,
-.out-portfolio-list-item:focus {
-    box-shadow:
-        0 2px 1px 0 rgba(46, 47, 66, 0.08),
-        0 1px 1px 0 rgba(46, 47, 66, 0.16),
-        0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+
 
 .out-portfolio-info {
     text-align: start;
@@ -790,10 +781,15 @@ button {
         pointer-events: none;
         overflow: auto;
 
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .burger-container{
         padding: 72px 24px 40px 16px;
         display: flex;
         flex-direction: column;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        height: 100%;
     }
 
     .burger-menu.is-open {
@@ -1035,7 +1031,7 @@ button {
     }
     
     .solutions-list-item {
-        width: calc((100% - 24px) / 2);
+        flex-basis: calc((100% - 24px) / 2); 
     }
     
     /* ----------Our Team section------------------ */
@@ -1236,6 +1232,7 @@ button {
     .our-team-list-item {
         flex-basis: calc((100% - 3*24px) / 4);
     }
+    
 
     /* --------------Portfolio--------------- */
 
@@ -1244,7 +1241,15 @@ button {
     }
     
     .out-portfolio-list-item {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         flex-basis: calc((100% - 2*24px) / 3);
+    }
+    .out-portfolio-list-item:hover,
+    .out-portfolio-list-item:focus {
+        box-shadow:
+                0 2px 1px 0 rgba(46, 47, 66, 0.08),
+                0 1px 1px 0 rgba(46, 47, 66, 0.16),
+                0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 
     /*----------------Footer----------------*/
